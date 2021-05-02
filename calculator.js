@@ -20,20 +20,20 @@ app.post('/bmicalculator', (req, res) => {
 	
 	
 	if (bmi < 19) {
-        res.send("<h3>hey! " +
-                 " your BMI is around: " + bmi +
-                 "<centre><h1>You are Underweight!");
+        res.send("<h3>Hai! " +
+                 " BMI anda adalah: " + bmi +
+                 "<centre><h1>Berat badan anda kurang dari normal!");
     } else if (19 <= bmi && bmi < 25) {
-        res.send("<h3>hey! " +
-                 " your BMI is around: " + bmi +
-                 "<centre><h1>You are Normalweight!");
+        res.send("<h3>Hai! " +
+                 " BMI anda adalah: " + bmi +
+                 "<centre><h1>Berat badan anda normal!");
     } else if (25 <= bmi && bmi < 30) {
-        res.send("<h3>hey! " +
-                 " your BMI is around: " + bmi +
-                 "<centre><h1>You are Overweight!");
+        res.send("<h3>Hai! " +
+                 " BMI anda adalah: " + bmi +
+                 "<centre><h1>Berat badan anda lebih dari normal!");
     } else {
-        res.send("<h3>hey! " +
-                 " your BMI is around: " + bmi +
-                 "<centre><h1>You are Obese!");
+        res.send("<h3>Hai! " +
+                 " BMI anda adalah: " + bmi +
+                 "<centre><h1>Anda Obesitas!");
     }
 })
